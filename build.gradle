@@ -3,6 +3,9 @@ plugins {
 	id 'maven-publish'
 }
 
+import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
@@ -44,6 +47,13 @@ processResources {
 
 	filesMatching("fabric.mod.json") {
 		expand "version": project.version
+	}
+
+	// Minify all .json files in the mod's built .jar files.
+	doLast {
+		fileTree(dir: outputs.files.asPath, include: ['**.json', '**/**.json']).each {
+			File file -> file.text = JsonOutput.toJson(new JsonSlurper().parse(file))
+		}
 	}
 }
 
