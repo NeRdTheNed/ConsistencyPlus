@@ -16,8 +16,8 @@ Dirt Stairs
 etc.
 
 **Textures**
-Attach all textures you have already made for this block set. If you haven't made any, that's fine too! However, this will probably take much longer to be implemented. 
-No guarantees that your textures actually get used if the blocks are added. 
+Attach all textures you have already made for this block set. If you haven't made any, that's fine too! However, this will probably take much longer to be implemented.
+No guarantees that your textures actually get used if the blocks are added.
 
 **Additional info**
 Should this block do something special? Have any other info? Put it here!

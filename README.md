@@ -1,6 +1,6 @@
 # Consistency+
 
-Consistency+ is a minecraft mod for 1.16.4+ Fabric Mod Loader about making blocks consistent. 
+Consistency+ is a minecraft mod for 1.16.4+ Fabric Mod Loader about making blocks consistent.
 
 
 ## What's added?
@@ -28,7 +28,7 @@ Well, if you're interested, you can put it as a suggestion in the issue tracker,
 Current Planned Additions Count is at 1377, and may raise if we feel like it.
 
 ### Will the blocks have CTM support?
-There are currently no plans for CTM in the base mod, however we may add this in the future through either updates, addons, or a resource pack. 
+There are currently no plans for CTM in the base mod, however we may add this in the future through either updates, addons, or a resource pack.
 
 
 ## How do I contribute?
