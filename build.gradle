@@ -3,6 +3,12 @@ plugins {
 	id 'maven-publish'
 }
 
+// Reproducible builds, see https://docs.gradle.org/6.7/userguide/working_with_files.html#sec:reproducible_archives
+tasks.withType(AbstractArchiveTask) {
+	preserveFileTimestamps = false
+	reproducibleFileOrder = true
+}
+
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 
